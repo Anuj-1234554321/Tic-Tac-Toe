@@ -3,7 +3,7 @@ import isWinner from "../../helpers/checkWinner";
 import Card from "../Cards/Card";
 function Grid({numberOfCards}) {
     const[board, setBoard] = useState(Array(numberOfCards).fill(""));
-    const [turn, setTurn] = useState(true); // if  true, player O's turn, if false, player X's turn
+    const [turn, setTurn] = useState(true); 
     const [winner, setWinner] = useState(null);
 
     function onPlay(index){

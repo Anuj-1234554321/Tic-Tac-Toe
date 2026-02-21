@@ -1,13 +1,15 @@
 
 import './App.css'
-import Card from './components/Cards/Card'
-import Grid from './components/Grid/Grid'
+import Pokedex from './components/pokedex/pokedex'
+// import Card from './components/Cards/Card'
+// import Grid from './components/Grid/Grid'
 
 function App() {
 
   return (
     <>
-    <Grid numberOfCards={9} />
+    {/* <Grid numberOfCards={9} /> */}
+    <Pokedex />
     </>
   )
 }
