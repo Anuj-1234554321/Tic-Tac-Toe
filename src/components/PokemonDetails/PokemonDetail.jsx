@@ -5,7 +5,7 @@ import axios from "axios";
  function PokemonDetail() {
     const {id} = useParams();
     const[pokemon,setPokemon] = useState("");
-   async function DownloadPokemonDetails(){
+    async function DownloadPokemonDetails(){
         const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
         setPokemon({
             id: response.data.id,
@@ -20,8 +20,6 @@ import axios from "axios";
     useEffect(() => {
             DownloadPokemonDetails();
         },[])
-
-
     return (
         <div className="pokemon-detail">
            <div className="pokemon-name">{pokemon.name}</div>
